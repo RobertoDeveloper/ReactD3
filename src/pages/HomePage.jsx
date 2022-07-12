@@ -50,7 +50,7 @@ export default function HomePage() {
         return () => {
             window.removeEventListener("resize", resize);
         }
-    });
+    }, []);
 
     const handleYearChange = (event) => {
         const year = +event.target.value;
